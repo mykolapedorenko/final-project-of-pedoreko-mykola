@@ -14,6 +14,26 @@ body, .grid, header, .photo-header {
     background-color: lightblue;
   
   }
+
+ .nav-wrapper {
+  background: yellow;
+  display: flex;
+ }
+
+  nav, .button {
+    display: flex;
+    background: white;
+    height: 40px;
+  }
+
+  nav {
+    width: 100px;
+    border-right: 2px solid #ccc;
+  }
+
+  .button {
+    flex-grow: 1;
+  }
 }
 
 /* header */
@@ -27,7 +47,7 @@ header {
   align-items: center;
   width: 100%;
   height: 100px;
-  background: rgba(89, 138, 172, 0.5);;
+  background: rgba(89, 138, 172, 0.5);
 }
 
 .header-logo {
