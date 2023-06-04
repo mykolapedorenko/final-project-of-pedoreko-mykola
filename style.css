@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 0;
+  font-family: "Muli", sans-serif;
+ 
+
 }
 
-body, .grid, header, .photo-header {
+body, .grid, header, .photo-header, .hidden, main {
   min-width: 250px;
 }
 
@@ -22,7 +26,8 @@ body, .grid, header, .photo-header {
 }
 
 span {
-  font-size: 9vw;
+  font-size: 7vw;
+  font-weight: bold;
 }
 
 /* header */
@@ -41,19 +46,20 @@ header {
 
 .header-logo {
   height: 60px;
+  display: block;
 }
 
 .photo-header {
   width: 100vw;
-  
+  display: block;
  }
 
  *,
  *:before,
  *:after {
    box-sizing: border-box;
-   font-family: sans-serif;
-   font-size: 35px;
+   font-size: 25px;
+   line-height: 50px;
  }
  
  label:before {
@@ -62,8 +68,9 @@ header {
    width: 100px;
    height: 50px;
    background-color: white;
-   padding: 5px;
+   padding-left: 18px;
    border-right: solid 1px #ccc;
+   font-weight: bold;
  }
  
  #toggle:checked + label:before {
@@ -118,6 +125,59 @@ header {
    color: #a4a4b8;
  }
 
+ /* MAIN BLOCK */
+
+ .about-hotel {
+  background: gold;
+
+ }
+
+ main {
+  max-width: 100vw;
+ }
+
+ .about-hotel {
+  background: #fff;
+  margin: 30px 0px;
+  max-width: 100vw;
+  
+ }
+
+ .about-hotel-img {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 85vw;
+  margin: 0px auto;
+  
+ }
+
+ h1 {
+  font-size: 8vw;
+  padding: 10px 15px;
+  font-weight: bold;
+  line-height: 12vw;
+ }
+
+ h2 {
+  font-size: 8vw;
+  padding: 0px 15px;
+  font-weight: bold;
+ }
+
+ p {
+  font-size: 6vw;
+  padding: 15px;
+  font-family: Amiko;
+  font-weight: 400;
+  line-height: 8vw;
+ }
+
+ footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+ }
 
 
  
